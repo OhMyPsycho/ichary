@@ -1,0 +1,31 @@
+<app-menu></app-menu>
+
+<div class="container padd_recovery">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <img src="./assets/images/flat_login.png" width="35%" alt="">
+    </div>
+    <div class="col-md-6">
+      <h4 class="h4 lato w-600 text-dark">Password Recovery</h4>
+      <form class="form_recovery" [formGroup]="recoveryForm" (ngSubmit)="recovery()">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="lato text-muted">Email address</label>
+          <input type="email" formControlName="email" class="form-control" placeholder="Email" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="exampleInputEmail1">Verificacion</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div> -->
+
+        <button type="submit" class="btn_color lato">Recovery</button>
+      </form>
+
+      <div class="mt-5 links_l">
+        <a href="" class="small lato">Log In</a> <br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

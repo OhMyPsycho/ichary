@@ -1,0 +1,47 @@
+<app-menu></app-menu>
+
+<div class="container padd_nosponsor">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <img src="./assets/images/flat_login.png" width="35%" alt="">
+    </div>
+    <div class="col-md-6">
+      <h4 class="lato text-center">iCharity : No Referrer</h4>
+      <p class="lato text-muted text-center"><strong>Note:</strong> You visit this site without a valid/active referrer.
+        If you
+        received links that similar to
+        this:icharity.club/?ref=<strong>abc</strong>, the 'abc' is your referrer's username.</p>
+      <form class="form_nosponsor" [formGroup]="nosponsor1Form" (ngSubmit)="nosponsor1()">
+        <div class="form-group">
+          <label for="username" class="lato text-muted">Referrer's Username</label>
+          <input type="text" formControlName="username" placeholder="Referrer's Username" class="lato form-control" id="username"
+            aria-describedby="emailHelp">
+        </div>
+
+        <button type="submit" class="btn_color lato">Sign Up</button>
+
+        <!-- <div class="form-group">
+          <label for="exampleInputEmail1">Verificacion</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div> -->
+      </form>
+
+      <form class="form_nosponsor mt-5" [formGroup]="nosponsor2Form" (ngSubmit)="nosponsor2()">
+        <div class="form-group">
+          <label for="ramdon" class="lato text-muted">Ramdon</label>
+          <select class="lato form-control" id="ramdon" placeholder="Select your country">
+            <option value="Select your country" selected>Select your country</option>
+            <option value="{{ p }}" *ngFor="let p of paises">{{ p }}</option>
+          </select>
+        </div>
+        <div class="w-100 text-center">
+          <button type="submit" class="btn_color lato">Find a Ramdon Referrer</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

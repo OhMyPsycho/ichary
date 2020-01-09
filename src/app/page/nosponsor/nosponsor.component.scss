@@ -1,0 +1,35 @@
+.padd_nosponsor {
+  padding: 10% 0;
+}
+
+.form_nosponsor {
+  .form-control {
+    border-radius: 25px;
+    // padding: 25px 20px;
+    font-weight: 500;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #cccccc;
+    }
+  }
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn_color {
+  padding: 8px 30px;
+  color: #ffffff;
+  font-family: 'Lato',
+    sans-serif;
+  text-decoration: none;
+  background: #DA4453;
+  border-radius: 25px;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}

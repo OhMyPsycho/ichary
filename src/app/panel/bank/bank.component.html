@@ -1,0 +1,115 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <p>Payment Account</p>
+
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Bank/Account Name</th>
+                      <th scope="col">Details</th>
+                      <th scope="col">Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let b of banka">
+                      <th> {{ b.name }}</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="row">
+                  <div class="col-3">
+                    <a routerLink="/panel/create-bank" class="btn_cuadro">
+                      <i class="material-icons">add</i>
+                      <span>Add Payment Method</span>
+                    </a></div>
+                </div>
+
+
+                <div class="accordion" id="accordionExample">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-sm" type="button" data-toggle="collapse" data-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          Payment Method Samples
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                      data-parent="#accordionExample">
+                      <div class="card-body">
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Bank/Account Name</th>
+                      <th scope="col">Details</th>
+                      <th scope="col">Note</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let b of banka">
+                      <th> {{ b.name }}</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                    </tr>
+                  </tbody>
+                </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="small btn btn-link btn-sm collapsed" type="button" data-toggle="collapse"
+                          data-target="#bitcoind" aria-expanded="false" aria-controls="bitcoind">
+                          Get BitCoin
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="bitcoind" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body text-muted small">
+Get BitCoin to donate and receive donation to your Bitcoin wallet :
+<br>
+<a href="">localbitcoins.com</a> <br>
+<a href="">remitano.com</a> <br>
+<a href="">coinbase.com</a> <br>
+<a href="">luno.com</a> <br>
+<a href="">paxful.com</a> <br>
+With Bitcoin, you can give and receive donations globally.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

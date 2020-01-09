@@ -1,0 +1,57 @@
+.padd_signup {
+  padding: 4% 0;
+}
+
+.form_signup {
+  .form-control {
+    border-radius: 25px;
+    // padding: 25px 20px;
+    font-weight: 500;
+    // color: #212121;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #cccccc;
+    }
+  }
+}
+
+.btn_color {
+  padding: 12px 30px;
+  color: #ffffff;
+  font-family: 'Lato',
+    sans-serif;
+  text-decoration: none;
+  background: #DA4453;
+  border-radius: 25px;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.w-500 {
+  font-weight: 600;
+}
+
+.text-p {
+  color: #DA4453;
+  text-decoration: none;
+}
+
+.links_l {
+  a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+
+    &:hover {
+      color: #DA4453;
+    }
+  }
+}

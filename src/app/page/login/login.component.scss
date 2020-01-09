@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+
+.padd_login {
+  padding: 20% 0;
+}
+
+.form_login {
+  .form-control {
+    border-radius: 25px;
+    padding: 25px 20px;
+    font-weight: 500;
+
+    &:focus {
+      box-shadow: none;
+      border-color: #cccccc;
+    }
+  }
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn_color {
+  padding: 12px 30px;
+  color: #ffffff;
+  font-family: 'Lato',
+    sans-serif;
+  text-decoration: none;
+  background: #DA4453;
+  border-radius: 25px;
+  border: none;
+  &:focus {
+      outline: none;
+  }
+}
+
+.links_l {
+    a {
+            color: #6c757d;
+            text-decoration: none;
+            transition: all ease-in-out .3s;
+            &:hover {
+                color: #DA4453;
+            }
+    }
+}

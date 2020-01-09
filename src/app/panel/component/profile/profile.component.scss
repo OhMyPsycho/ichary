@@ -1,0 +1,52 @@
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+}
+.bg_grade {
+        background: #DA4453;
+        background: -webkit-linear-gradient(to left, #89216B, #DA4453);
+        background: linear-gradient(to left, #89216B, #DA4453);
+        padding: 5px 0;
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            padding: 0 10px;
+        }
+}
+
+.btn-gradient-success {
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    color: #fff;
+    font-family: 'Lato',
+    sans-serif;
+    font-weight: 600;
+
+}
+
+.btn-gradient-primary {
+    background: #396afc;
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+    background: linear-gradient(to right, #2948ff, #396afc);
+        color: #fff;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 600;
+
+}
+
+.btn-gradient-warning {
+    background: #f7ff00;
+    background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);
+    background: linear-gradient(to right, #db36a4, #f7ff00);
+        color: #fff;
+        font-family: 'Lato',
+        sans-serif;
+        font-weight: 600;
+
+}

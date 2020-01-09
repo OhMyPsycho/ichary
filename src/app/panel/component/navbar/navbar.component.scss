@@ -1,0 +1,34 @@
+.navbar {
+            background: #DA4453;
+            background: -webkit-linear-gradient(to left, #89216B, #DA4453);
+            background: linear-gradient(to left, #89216B, #DA4453);
+    .nav-item {
+        .nav-link {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            .txtnavbar {
+                margin-left: 10px;
+            }
+        }
+        .dropdown-menu {
+            padding-top: 0;
+            padding-bottom: 0;
+            .dropdown-item {
+                font-size: small;
+                display: flex;
+                align-items: center;
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                color: #757575;
+                            &:hover {
+                              background: #DA4453;
+                              color: #fff;
+                            }
+                            span {
+                                margin-left: 5px;
+                            }
+            }
+        }
+    } 
+}

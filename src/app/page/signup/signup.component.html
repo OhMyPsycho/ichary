@@ -1,0 +1,73 @@
+<app-menu></app-menu>
+
+<div class="container padd_signup">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-7 text-center">
+      <img src="./assets/images/flat_login.png" width="35%" alt="">
+    </div>
+    <div class="col-md-5">
+      <h4 class="h4 text-center lato">Member Panel</h4>
+      <form class="form_signup" [formGroup]="signupForm" (ngSubmit)="signup()">
+        <div class="form-group">
+          <label for="name" class="lato text-muted w-500">Full name</label>
+          <input type="text" formControlName="name" placeholder="Full Name" class="form-control lato" id="name"
+            aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+          <label for="country" class="lato w-500 text-muted">Country</label>
+          <select name="" id="" class="form-control" formControlName="country">
+            <option value="1">dasd</option>
+            <option value="2">asdasd</option>
+            <option value="3">asdasd</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="username" class="lato text-muted">Username</label>
+          <input type="text" formControlName="username" placeholder="Email" class="lato form-control"
+            id="username"
+            aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="lato text-muted">Email</label>
+          <input type="email" formControlName="email" placeholder="Email" class="lato form-control"
+            id="email"
+            aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+          <label for="emailconfirmation" class="text-muted lato">Email confirmation</label>
+          <input type="email" formControlName="emailConfirm" placeholder="Email" class="lato form-control"
+            id="emailconfirmation"
+            aria-describedby="emailHelp">
+        </div>
+        <!-- <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" formControlName="password" placeholder="Password" class="form-control"
+            id="exampleInputPassword1">
+        </div> -->
+        <!-- 
+              <div class="form-group">
+                <label for="exampleInputEmail1">Verificacion</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+-->
+<p class="text-muted text-center lato">Invited by miguel95. By signing up your are agree to the <a href=""
+    class="text-p"><strong>terms.</strong></a>.
+</p>
+        <div class="text-center">
+          <button type="submit" class="btn_color lato">Login</button>
+        </div>
+      </form>
+
+      <div class="links_l mt-5">
+        <a routerLink="/recovery" class="small lato">Forgot your password?</a> <br>
+        <a href="" class="small lato">Sign Up</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
