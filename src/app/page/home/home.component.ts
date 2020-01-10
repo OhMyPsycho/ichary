@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { WOW } from 'wowjs/dist/wow.min';
+//import { WOW } from 'wowjs/dist/wow.min';
 
 @Component({
   selector: 'app-home',
@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-
-  new WOW().init();
+  // new WOW().init();
 }
 
 }
